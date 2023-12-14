@@ -19,10 +19,7 @@ const OverviewWrapperStyles = styled.section`
     background: yellow;
   }
 
-  ::selection {
-    color: red;
-    background: yellow;
-  }
+
 `
 
 export default function IndexPage() {
