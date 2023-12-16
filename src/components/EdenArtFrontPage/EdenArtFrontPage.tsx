@@ -12,7 +12,7 @@ export default function EdenArtFrontPage() {
     <div className="bg-black">
       <div
         className={`fixed z-50 w-full bg-black opacity-80 ${
-          isMenuOpen && size.width < 640 ? 'h-52' : 'h-16'
+          isMenuOpen && size.width < 640 ? 'h-56' : 'h-16'
         } mt-8`}
       >
         {' '}
@@ -29,11 +29,16 @@ export default function EdenArtFrontPage() {
                 eden.art
               </p>
             </Link>
-            <div className="border border-l-white h-8 ml-4 opacity-40"></div>
             <Link href="https://docs.eden.art/">
-              <p className="text-xl pl-4 font-sarif font-light text-white sm:text-lg">
-                Docs
-              </p>
+              {size.width > 640 && (
+                <div className="flex">
+                  <div className="border border-l-white h-8 ml-4 opacity-40"></div>
+
+                  <p className="text-xl pl-4 font-sarif font-light text-white sm:text-lg">
+                    Docs
+                  </p>
+                </div>
+              )}
             </Link>
           </div>
 
@@ -87,13 +92,14 @@ export default function EdenArtFrontPage() {
               <div className="flex">
                 <FileOutlined
                   style={{ fontSize: '26px' }}
-                  className="text-white ml-5 mt-1"
+                  className="text-white ml-5 mt-1 mb-2"
                 />{' '}
                 <p className="text-white ml-2.5  mt-2 text-sm font-bold">
                   DOCS
                 </p>
               </div>
             </Link>
+            <div className="border border-b mx-5 opacity-40 "></div>
             <Link
               target="_blank"
               rel="noopener noreferrer"
@@ -116,7 +122,10 @@ export default function EdenArtFrontPage() {
               href="https://discord.com/invite/4dSYwDT"
             >
               <div className="flex">
-                <img src="discord.png" className="h-8 ml-4 mt-0.5 object-contain" />{' '}
+                <img
+                  src="discord.png"
+                  className="h-8 ml-4 mt-0.5 object-contain"
+                />{' '}
                 <p className="text-white ml-2  mt-2 text-sm font-bold">
                   DISCORD
                 </p>
@@ -186,7 +195,7 @@ export default function EdenArtFrontPage() {
               <p className="lg:mb-4 text-2xl font-semibold lg:text-4xl md:text-xl sm:text-lg">
                 By artists, for artists
               </p>
-              <p className="md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
+              <p className="mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
                 Eden is built by OG AI artists with the express purpose of
                 armoring digital artists with this technology. Artists train
                 your own personal models and reclaim your sovereignty in this
@@ -200,12 +209,12 @@ export default function EdenArtFrontPage() {
             </div>
           </div>
           {/* 2nd section */}
-          <div className="flex flex-col-reverse sm:flex sm:flex-row lg:mt-4">
+          <div className="mt-4 flex flex-col-reverse sm:flex sm:flex-row lg:mt-4">
             <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right">
               <p className="lg:mb-4 text-2xl font-semibold lg:text-4xl md:text-xl sm:text-lg">
                 Open source, open access
               </p>
-              <p className="md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
+              <p className="mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
                 Eden pipelines are built on top of and contribute to the
                 open-source Al revolution, and encourages free modification and
                 experimentation on our tools. There are no walls around our
@@ -226,8 +235,8 @@ export default function EdenArtFrontPage() {
           </div>
 
           {/* 3rd section */}
-          <div className="mt-4 lg:mt-24 flex flex-col-reverse sm:flex-col">
-            <div className="px-3 sm:pl-10 py-6 w-full flex justify-center sm:text-center flex-col sm:items-center">
+          <div className="mt-10 lg:mt-24 flex flex-col-reverse sm:flex-col">
+            <div className="px-3 sm:pl-10  w-full flex justify-center sm:text-center flex-col sm:items-center">
               <p className="mb-4 md:mb-2 lg:mb-4 text-2xl font-semibold lg:text-4xl md:text-2xl sm:text-lg ">
                 Create, remix, and share your art
               </p>
@@ -241,7 +250,7 @@ export default function EdenArtFrontPage() {
                 </button>
               </Link>
             </div>
-            <div className="w-full md:pt-3 pb-3">
+            <div className="w-full md:pt-3 pb-3 xl:mt-6">
               <img
                 src="/img3.png"
                 className="rounded-2xl w-full h-auto object-cover"
@@ -250,7 +259,7 @@ export default function EdenArtFrontPage() {
           </div>
 
           {/* 4th section */}
-          <div className="flex mt-4 sm:mt-10 md:mt-24 flex-col sm:flex sm:flex-row">
+          <div className="flex mt-6 sm:mt-10 md:mt-24 flex-col sm:flex sm:flex-row">
             <div className=" md:w-1/2 pt-3 pb-3 sm:w-10/12">
               <img
                 src="/img4.png"
@@ -285,7 +294,7 @@ export default function EdenArtFrontPage() {
           </div>
 
           {/* 5th section */}
-          <div className="flex mt-4 sm:mt-10 md:mt-24 flex-col-reverse sm:flex sm:flex-row">
+          <div className="flex mt-6 sm:mt-10 md:mt-24 flex-col-reverse sm:flex sm:flex-row">
             <div className="px-3 sm:w-2/3 md:pr-10 sm:py-3 md:py-6 flex-grow sm:text-right">
               <p className="md:mb-4 text-2xl font-semibold lg:text-4xl md:text-2xl sm:text-lg">
                 Build creative autonomous agents who represent you (Beta){' '}
