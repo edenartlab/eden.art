@@ -221,7 +221,7 @@ export default function EdenArtFrontPage() {
                 garden.
               </p>
               <Link href={'https://docs.eden.art/docs/guides/sdk/'}>
-                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#F15EBF]/60">
+                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#5E64F1]/60">
                   SDK Quickstart
                 </button>
               </Link>
@@ -245,7 +245,7 @@ export default function EdenArtFrontPage() {
                 that generate the most sublime and glorious image and video art.
               </p>
               <Link href={'https://app.eden.art/create/creations'}>
-                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#F15EBF]/60">
+                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#34e0a1]/60">
                   Create Art in 1 Minute
                 </button>
               </Link>
@@ -306,7 +306,7 @@ export default function EdenArtFrontPage() {
                 new work.
               </p>
               <Link href={'https://docs.eden.art/docs/guides/characters/'}>
-                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#F15EBF]/60">
+                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#5EF1E8]/60">
                   Apply to Beta Program
                 </button>
               </Link>
