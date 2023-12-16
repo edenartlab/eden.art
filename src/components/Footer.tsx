@@ -154,11 +154,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+        {/* <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-gray-400">
             &copy; 2023 Eden.art All rights reserved.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   )

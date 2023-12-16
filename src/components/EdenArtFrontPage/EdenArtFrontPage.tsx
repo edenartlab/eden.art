@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Footer from '../Footer'
-import { MenuOutlined, FileOutlined } from '@ant-design/icons'
+import { MenuOutlined, ControlOutlined, FileTextOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import useWindowSize from '@/hooks/useWindowSize'
 
@@ -12,7 +12,7 @@ export default function EdenArtFrontPage() {
     <div className="bg-black">
       <div
         className={`fixed z-50 w-full bg-black opacity-80 ${
-          isMenuOpen && size.width < 640 ? 'h-56' : 'h-16'
+          isMenuOpen && size.width < 640 ? 'h-72' : 'h-16'
         } mt-8`}
       >
         {' '}
@@ -28,6 +28,17 @@ export default function EdenArtFrontPage() {
               <p className="text-xl pl-2 font-sarif font-light text-white sm:text-2xl">
                 eden.art
               </p>
+            </Link>
+            <Link href="https://app.eden.art/">
+              {size.width > 640 && (
+                <div className="flex">
+                  <div className="border border-l-white h-8 ml-4 opacity-40"></div>
+
+                  <p className="text-xl mt-0.5 pl-4 font-sarif font-light text-white sm:text-lg">
+                    App
+                  </p>
+                </div>
+              )}
             </Link>
             <Link href="https://docs.eden.art/">
               {size.width > 640 && (
@@ -55,7 +66,7 @@ export default function EdenArtFrontPage() {
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/abraham-ai"
+                href="https://github.com/edenartlab"
               >
                 <img src="github.png" className="h-8 sm:h-10 object-contain" />
               </Link>
@@ -79,6 +90,16 @@ export default function EdenArtFrontPage() {
                   className="h-8 ml-2 sm:h-10 sm:ml-4 object-contain"
                 />
               </Link>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://instagram.com/eden.art____"
+              >
+                <img
+                  src="instagram.png"
+                  className="h-8 ml-2 sm:h-10 sm:ml-4 object-contain"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -87,10 +108,25 @@ export default function EdenArtFrontPage() {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/abraham-ai"
+              href="https://app.eden.art"
             >
               <div className="flex">
-                <FileOutlined
+                <ControlOutlined
+                  style={{ fontSize: '26px' }}
+                  className="text-white ml-5 mt-1 mb-2"
+                />{' '}
+                <p className="text-white ml-2.5  mt-2 text-sm font-bold">
+                  APP
+                </p>
+              </div>
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://docs.eden.art"
+            >
+              <div className="flex">
+                <FileTextOutlined
                   style={{ fontSize: '26px' }}
                   className="text-white ml-5 mt-1 mb-2"
                 />{' '}
@@ -103,7 +139,7 @@ export default function EdenArtFrontPage() {
             <Link
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/abraham-ai"
+              href="https://github.com/edenartlab"
             >
               <div className="flex">
                 <img
@@ -140,6 +176,18 @@ export default function EdenArtFrontPage() {
                 <img src="twitter.png" className="h-8 ml-4 object-contain" />{' '}
                 <p className="text-white ml-2 mt-2 text-sm font-bold">
                   TWITTER
+                </p>
+              </div>
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://instagram.com/eden.art____"
+            >
+              <div className="flex">
+                <img src="instagram.png" className="h-8 ml-4 object-contain" />{' '}
+                <p className="text-white ml-2 mt-2 text-sm font-bold">
+                  INSTAGRAM
                 </p>
               </div>
             </Link>
@@ -276,7 +324,7 @@ export default function EdenArtFrontPage() {
                 sovereignty, train your own model on your work, and serve it to
                 your fans.
               </p>
-              <Link href={'https://docs.eden.art/docs/guides/concepts/'}>
+              <Link href={'https://app.eden.art/concepts'}>
                 <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#F15EBF]/60">
                   Explore Concepts
                 </button>
