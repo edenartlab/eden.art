@@ -1,16 +1,18 @@
 import Link from 'next/link'
 import Footer from '../Footer'
-import { MenuOutlined } from '@ant-design/icons'
+import { MenuOutlined, FileOutlined } from '@ant-design/icons'
 import { useState } from 'react'
+import useWindowSize from '@/hooks/useWindowSize'
 
 export default function EdenArtFrontPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const size = useWindowSize()
 
   return (
     <div className="bg-black">
       <div
         className={`fixed z-50 w-full bg-black opacity-80 ${
-          isMenuOpen ? 'h-44' : 'h-16'
+          isMenuOpen && size.width < 640 ? 'h-52' : 'h-16'
         } mt-8`}
       >
         {' '}
@@ -36,10 +38,10 @@ export default function EdenArtFrontPage() {
           </div>
 
           <div className="flex items-center pr-4 sm:pr-20">
-            <div className="sm:hidden text-white">
+            <div className="sm:hidden text-white pb-1">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="border rounded-full px-2 py-1"
+                className="px-2 py-1"
               >
                 <MenuOutlined />
               </button>
@@ -75,16 +77,34 @@ export default function EdenArtFrontPage() {
             </div>
           </div>
         </div>
-        {isMenuOpen && (
-          <div className="flex flex-col mt-2">
+        {isMenuOpen && size.width < 640 && (
+          <div className="flex flex-col mt-1">
             <Link
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/abraham-ai"
             >
               <div className="flex">
-                <img src="github.png" className="h-8 ml-4 object-contain" />{' '}
-                <p className="text-white ml-2  mt-2 text-sm font-bold">
+                <FileOutlined
+                  style={{ fontSize: '26px' }}
+                  className="text-white ml-5 mt-1"
+                />{' '}
+                <p className="text-white ml-2.5  mt-2 text-sm font-bold">
+                  DOCS
+                </p>
+              </div>
+            </Link>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/abraham-ai"
+            >
+              <div className="flex">
+                <img
+                  src="github.png"
+                  className="h-8 mt-1.5 ml-4 object-contain"
+                />{' '}
+                <p className="text-white ml-2  mt-3 text-sm font-bold">
                   GITHUB
                 </p>
               </div>
@@ -96,7 +116,7 @@ export default function EdenArtFrontPage() {
               href="https://discord.com/invite/4dSYwDT"
             >
               <div className="flex">
-                <img src="discord.png" className="h-8 ml-4 object-contain" />{' '}
+                <img src="discord.png" className="h-8 ml-4 mt-0.5 object-contain" />{' '}
                 <p className="text-white ml-2  mt-2 text-sm font-bold">
                   DISCORD
                 </p>
