@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Footer from '../Footer'
-import { Dropdown, Menu } from 'antd'
 import { MenuOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 
