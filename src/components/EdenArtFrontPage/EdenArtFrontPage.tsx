@@ -34,7 +34,7 @@ export default function EdenArtFrontPage() {
                 <div className="flex">
                   <div className="border border-l-white h-8 ml-4 opacity-40"></div>
 
-                  <p className="text-xl pl-4 font-sarif font-light text-white sm:text-lg">
+                  <p className="text-xl mt-0.5 pl-4 font-sarif font-light text-white sm:text-lg">
                     Docs
                   </p>
                 </div>
