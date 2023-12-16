@@ -245,9 +245,7 @@ export default function EdenArtFrontPage() {
               </p>
               <p className="mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
                 Eden is built by OG AI artists with the express purpose of
-                armoring digital artists with this technology. Artists train
-                your own personal models and reclaim your sovereignty in this
-                technology.
+                armoring digital artists with this technology.
               </p>
               <Link href={'https://docs.eden.art/docs/overview/intro/'}>
                 <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#F15EBF]/60">
@@ -290,7 +288,7 @@ export default function EdenArtFrontPage() {
               </p>
               <p className="text-2xl text-white lg:text-2xl md:text-lg  sm:text-xs font-extralight">
                 Eden maintains an ever-growing suite of customizable pipelines
-                that generate the most sublime and glorious image and video art.
+                that generate sublime images and video art.
               </p>
               <Link href={'https://app.eden.art/create/creations'}>
                 <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#34e0a1]/60">
@@ -319,9 +317,8 @@ export default function EdenArtFrontPage() {
                 Train custom models on your own work
               </p>
               <p className="mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
-                For too long, artists have been left out of the process of
-                training foundation models on their work. Reclaim your
-                sovereignty, train your own model on your work, and serve it to
+                Reclaim your likeness online, train your own model 
+                on your work, and serve it to
                 your fans.
               </p>
               <Link href={'https://app.eden.art/concepts'}>
@@ -345,12 +342,12 @@ export default function EdenArtFrontPage() {
           <div className="flex mt-6 sm:mt-10 md:mt-24 flex-col-reverse sm:flex sm:flex-row">
             <div className="px-3 sm:w-2/3 md:pr-10 sm:py-3 md:py-6 flex-grow sm:text-right">
               <p className="md:mb-4 text-2xl font-semibold lg:text-4xl md:text-2xl sm:text-lg">
-                Build creative autonomous agents who represent you (Beta){' '}
+                Build autonomous creative agents{' '}
               </p>
               <p className="mt-4  text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
                 Eden is developing an experimental chatbot who represents your
                 artistic brand. Like a concierge who talks to your fans,
-                sketches new works in your style, and handles commissions for
+                sketches new works in your style, or handles commissions for
                 new work.
               </p>
               <Link href={'https://docs.eden.art/docs/guides/characters/'}>
