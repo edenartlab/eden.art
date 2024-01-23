@@ -1,24 +1,33 @@
 const navigation = {
   links: [
     { name: 'App', href: 'https://app.eden.art/' },
-    { name: 'Docs', href: 'https://docs.eden.art/docs/category/overview' },
-    { name: 'Terms of Service', href: 'https://docs.eden.art/docs/overview/tos' },
-    { name: 'Privacy Policy', href: 'https://docs.eden.art/docs/overview/privacy' },
+    { name: 'Docs', href: 'https://docs.eden.art/docs/category/overview', target: '_blank' },
+    { name: 'Terms of Service', href: 'https://docs.eden.art/docs/overview/tos', target: '_blank' },
+    { name: 'Privacy Policy', href: 'https://docs.eden.art/docs/overview/privacy', target: '_blank' },
   ],
   community: [
-    { name: 'Discord', href: 'https://discord.gg/4dSYwDT' },
-    { name: 'Twitter', href: 'https://twitter.com/eden_art_' },
-    { name: 'Instagram', href: 'https://instagram.com/eden.art____' },
+    { name: 'Discord', href: 'https://discord.gg/4dSYwDT', target: '_blank', rel: 'noopener noref nofollow' },
+    { name: 'Twitter', href: 'https://twitter.com/eden_art_', target: '_blank', rel: 'noopener noref nofollow' },
+    { name: 'Instagram', href: 'https://instagram.com/eden.art____', target: '_blank', rel: 'noopener noref nofollow' },
   ],
   developers: [
-    { name: 'Github', href: 'https://github.com/github.com/edenartlab' },
+    {
+      name: 'Github',
+      href: 'https://github.com/github.com/edenartlab',
+      target: '_blank',
+      rel: 'noopener noref nofollow'
+    },
     {
       name: 'Eden SDK (JS)',
       href: 'https://www.npmjs.com/package/@edenlabs/eden-sdk',
+      target: '_blank',
+      rel: 'noopener noref nofollow'
     },
     {
       name: 'Eden SDK (Python)',
       href: 'https://github.com/abraham-ai/eden-sdk-py',
+      target: '_blank',
+      rel: 'noopener noref nofollow'
     },
   ],
 
@@ -54,7 +63,8 @@ const navigation = {
       href: '#',
       icon: props => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          <path
+            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
         </svg>
       ),
     },
@@ -96,7 +106,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-16 border-t border-white/10">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <img className="h-7" src="/logo.png" alt="Eden.art" />
+            <img className="h-7" src="/logo.png" alt="Eden.art"/>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -109,6 +119,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
+                        target={item.target}
                         className="text-sm leading-6 text-gray-300 hover:text-white"
                       >
                         {item.name}
@@ -126,6 +137,8 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
+                        target={item.target}
+                        rel={item.rel}
                         className="text-sm leading-6 text-gray-300 hover:text-white"
                       >
                         {item.name}
@@ -145,6 +158,8 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
+                        target={item.target}
+                        rel={item.rel}
                         className="text-sm leading-6 text-gray-300 hover:text-white"
                       >
                         {item.name}
