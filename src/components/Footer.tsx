@@ -2,13 +2,15 @@ const navigation = {
   links: [
     { name: 'App', href: 'https://app.eden.art/' },
     { name: 'Docs', href: 'https://docs.eden.art/docs/category/overview' },
+    { name: 'Terms of Service', href: 'https://docs.eden.art/docs/overview/tos' },
+    { name: 'Privacy Policy', href: 'https://docs.eden.art/docs/overview/privacy' },
   ],
   community: [
     { name: 'Discord', href: 'https://discord.gg/4dSYwDT' },
     { name: 'Twitter', href: 'https://twitter.com/eden_art_' },
     { name: 'Instagram', href: 'https://instagram.com/eden.art____' },
   ],
-  devlopers: [
+  developers: [
     { name: 'Github', href: 'https://github.com/github.com/edenartlab' },
     {
       name: 'Eden SDK (JS)',
@@ -139,7 +141,7 @@ export default function Footer() {
                   Company
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.devlopers.map(item => (
+                  {navigation.developers.map(item => (
                     <li key={item.name}>
                       <a
                         href={item.href}
