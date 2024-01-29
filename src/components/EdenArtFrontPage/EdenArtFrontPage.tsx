@@ -240,7 +240,7 @@ export default function EdenArtFrontPage() {
         </div> */}
       </div>
       <section className="flex flex-col">
-        <div className="text-white flex px-4 xl:px-24 mt-10 flex-col">
+        <div className="text-white flex px-4 xl:px-24 mt-10 flex-col z-10">
           {/* 1st section */}
           <div className="flex flex-col sm:flex sm:flex-row sm:mt-6">
             <div className="lg:w-1/2 pt-3 pb-3 sm:w-10/12">
