@@ -220,16 +220,22 @@ export default function EdenArtFrontPage() {
         <div className="max-w-7xl px-14 pb-24 pt-32 sm:pb-32 md:flex md:px-24 md:py-32 lg:flex lg:px-24 lg:py-32 justify-start -mt-8 relative z-10">
           <div className="max-w-7xl flex-shrink-0  lg:pt-8">
             <h1 className="mt-24 text-4xl font-bold tracking-tight text-white lg:text-6xl">
-              Create, remix, and share AI art
+              Train generative AI models that serve your art
             </h1>
             <p className="mt-3 font-extralight text-md lg:text-2xl text-gray-300">
-              Eden is a community of artists and technologists building a social
-              hub for creative AI.
+              Eden makes it easy to amplify your artistic style with AI. Upload your own work, train custom models, and serve them to your fans.
             </p>
-            <Link href={'https://app.eden.art'}>
+            <Link href={'https://app.eden.art/create/concepts'}>
               <div className="mt-6">
-                <button className="text-white text-lg md:text-sm lg:text-lg pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
-                  Enter the Garden
+                <button className="text-white text-2xl md:text-sm lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
+                  Train a model in 5 minutes
+                </button>
+              </div>
+            </Link>
+            <Link href={'https://app.eden.art/concepts'}>
+              <div className="mt-6">
+                <button className="text-white text-2xl md:text-sm lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
+                  Explore community models
                 </button>
               </div>
             </Link>
@@ -296,11 +302,10 @@ export default function EdenArtFrontPage() {
           <div className="mt-10 lg:mt-24 flex flex-col-reverse sm:flex-col">
             <div className="px-3 sm:pl-10  w-full flex justify-center sm:text-center flex-col sm:items-center">
               <p className="mb-4 md:mb-2 lg:mb-4 text-2xl font-semibold lg:text-4xl md:text-2xl sm:text-lg ">
-                Create, remix, and share your art
+                Create, remix, and share
               </p>
               <p className="text-2xl text-white lg:text-2xl md:text-lg  sm:text-xs font-extralight">
-                Eden maintains an ever-growing suite of customizable pipelines
-                that generate sublime images and video art.
+                Generate sublime images and videos that use your model in seconds. Share it with your fans and let them remix it and collaborate with you.
               </p>
               <Link href={'https://app.eden.art/create/creations'}>
                 <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#34e0a1]/60">
@@ -321,23 +326,21 @@ export default function EdenArtFrontPage() {
           <div className="flex mt-6 sm:mt-10 md:mt-24 flex-col sm:flex sm:flex-row">
             <div className=" md:w-1/2 pt-3 pb-3 sm:w-10/12">
               <img
-                alt="Train custom models"
-                src="/img4.png"
+                alt="Deploy art bots online"
+                src="/img5.jpg"
                 className="rounded-2xl w-full h-auto object-cover"
               />
             </div>
             <div className="px-3 sm:px-4 md:pl-10 sm:py-3 md:py-6 flex-grow">
               <p className="md:mb-4 text-2xl font-semibold lg:text-4xl md:text-2xl sm:text-lg">
-                Train custom models on your own work
+                Deploy art bots online
               </p>
               <p className="mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
-                Reclaim your likeness online, train your own model 
-                on your work, and serve it to
-                your fans.
+                Make a personalized chatbot who represents you or your brand, talks to your fans, and creates new works in your style.
               </p>
-              <Link href={'https://app.eden.art/concepts'}>
+              <Link href={'https://docs.eden.art/docs/guides/characters/'}>
                 <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#F15EBF]/60">
-                  Explore Concepts
+                  Deploy a bot on Discord or Twitter
                 </button>
               </Link>
               {/* <Link
@@ -356,24 +359,21 @@ export default function EdenArtFrontPage() {
           <div className="flex mt-6 sm:mt-10 md:mt-24 flex-col-reverse sm:flex sm:flex-row">
             <div className="px-3 sm:w-2/3 md:pr-10 sm:py-3 md:py-6 flex-grow sm:text-right">
               <p className="md:mb-4 text-2xl font-semibold lg:text-4xl md:text-2xl sm:text-lg">
-                Build autonomous creative agents{' '}
+                Build custom applications{' '}
               </p>
               <p className="mt-4  text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
-                Eden is developing an experimental chatbot who represents your
-                artistic brand. Like a concierge who talks to your fans,
-                sketches new works in your style, or handles commissions for
-                new work.
+                Develop custom frontends or interactive applications that plug into the generative AI ecosystem.
               </p>
-              <Link href={'https://docs.eden.art/docs/guides/characters/'}>
+              <Link href={'https://docs.eden.art/docs/guides/sdk'}>
                 <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#5EF1E8]/60">
-                  Apply to Beta Program
+                  Get started with our SDK
                 </button>
               </Link>
             </div>
             <div className=" md:w-1/2 pt-3 pb-3 sm:w-6/12">
               <img
                 alt="Beta program"
-                src="/img5.jpg"
+                src="/img4.png"
                 className="rounded-2xl w-full h-auto object-cover"
               />
             </div>
