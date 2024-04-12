@@ -218,8 +218,8 @@ export default function EdenArtFrontPage() {
           </video>
         </div>
         <div className="max-w-7xl px-14 pb-24 pt-32 sm:pb-32 md:flex md:px-24 md:py-32 lg:flex lg:px-24 lg:py-32 justify-start -mt-8 relative z-10">
-          <div className="max-w-7xl flex-shrink-0  lg:pt-8">
-            <h1 className="mt-24 text-4xl font-bold tracking-tight text-white lg:text-6xl">
+          <div className="max-w-7xl lg:pt-8">
+            <h1 className="mt-24 text-4xl font-bold tracking-tight text-white lg:text-6xl 3xl:text-6xl">
               Train generative AI models that serve your art
             </h1>
             <p className="mt-3 font-extralight text-md lg:text-2xl text-gray-300">
