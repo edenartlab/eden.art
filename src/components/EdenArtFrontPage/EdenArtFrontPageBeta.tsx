@@ -212,29 +212,33 @@ export default function EdenArtFrontPage() {
             muted
             className="absolute top-24 inset-0 w-full h-full object-cover z-0"
           >
-            <source src="/video.mp4" type="video/mp4" />
+            <source src="/video.mp4" type="video/mp4"/>
             {/* Add more <source> elements for other video formats if needed */}
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="max-w-7xl px-14 pb-24 pt-32 sm:pb-32 md:flex md:px-24 md:py-32 lg:flex lg:px-24 lg:py-32 justify-start -mt-8 relative z-10">
-          <div className="max-w-7xl lg:pt-8">
-            <h1 className="mt-24 text-4xl font-bold tracking-tight text-white lg:text-6xl 3xl:text-6xl">
+        <div
+          className="flex h-full items-center max-w-7xl px-4 sm:px-16 pb-24 pt-24 sm:pt-32 sm:pb-32 md:flex md:px-24 md:py-32 lg:flex lg:px-24 lg:py-32 justify-start -mt-8 relative z-10">
+          <div className="max-w-7xl">
+            <h1 className="text-4xl font-bold tracking-tight text-white lg:text-6xl 3xl:text-6xl">
               Train generative AI models that serve your art
             </h1>
             <p className="mt-3 font-extralight text-md lg:text-2xl text-gray-300">
-              Eden makes it easy to amplify your artistic style with AI. Upload your own work, train custom models, and serve them to your fans.
+              Eden makes it easy to amplify your artistic style with AI. Upload your own work, train custom models, and
+              serve them to your fans.
             </p>
             <Link href={'https://app.eden.art/create/concepts'}>
               <div className="mt-6">
-                <button className="text-white text-2xl md:text-sm lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
+                <button
+                  className="text-white text-2xl md:text-sm lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
                   Train a model in 5 minutes
                 </button>
               </div>
             </Link>
             <Link href={'https://app.eden.art/concepts'}>
               <div className="mt-6">
-                <button className="text-white text-2xl md:text-sm lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
+                <button
+                  className="text-white text-2xl md:text-sm lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
                   Explore community models
                 </button>
               </div>
