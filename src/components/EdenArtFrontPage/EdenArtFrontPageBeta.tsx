@@ -13,7 +13,7 @@ export default function EdenArtFrontPage() {
   return (
     <div className="bg-black">
       <div
-        className={`fixed z-50 w-full bg-black opacity-60 ${
+        className={`fixed z-50 w-full bg-black opacity-75 ${
           isMenuOpen && size.width < 640 ? 'h-72' : 'h-16'
         } mt-8`}
       >
@@ -50,17 +50,6 @@ export default function EdenArtFrontPage() {
 
                   <p className="text-xl mt-0.5 pl-4 font-sarif font-light text-white sm:text-lg">
                     Docs
-                  </p>
-                </div>
-              )}
-            </Link>
-            <Link href="https://eden.art/team/">
-              {size.width > 640 && (
-                <div className="flex">
-                  <div className="border border-l-white h-8 ml-4 opacity-40"></div>
-
-                  <p className="text-xl mt-0.5 pl-4 font-sarif font-light text-white sm:text-lg">
-                    Team
                   </p>
                 </div>
               )}
@@ -233,12 +222,12 @@ export default function EdenArtFrontPage() {
           <div className="max-w-7xl lg:pt-16">
             <h1 className="pt-20 text-4xl font-bold tracking-tight text-white lg:text-6xl 3xl:text-6xl">
               <Link href={'https://app.eden.art/'}>
-                Get creative with hundreds of artisan AI models or craft your own.
+                Create with hundreds of artist-crafted AI models or train your own.
               </Link>
             </h1>
             <p className="mt-3 font-extralight text-md lg:text-2xl text-gray-300">
-              Create and remix videos, photos, illustrations, artwork, and more with our collection of artist-crafted AI
-              models. Craft your own model to emulate your brand or style.
+              Create and remix videos, photos, illustrations, artwork, and more with our collection of custom AI
+              models. Train your own model to produce your style & aesthetic.
             </p>
             <Link href={'https://app.eden.art/'}>
               <div className="mt-6">
@@ -267,7 +256,7 @@ export default function EdenArtFrontPage() {
             <div className="px-3 sm:px-4 md:pl-10 py-3 flex-grow lg:w-4/12">
               <p className="lg:mb-4 text-2xl font-bold lg:text-3xl md:text-xl sm:text-lg">
                 <Link href={'https://app.eden.art/'}>
-                Creative AI toolkit powered by custom models
+                Creative AI toolkit powered by custom models.
                 </Link>
               </p>
               <p
@@ -281,9 +270,9 @@ export default function EdenArtFrontPage() {
 
           <div className="mt-10 lg:mt-20 lg:mb-2 flex flex-col-reverse sm:flex sm:flex-row">
             <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right lg:w-4/12">
-              <p className="lg:mb-4 text-2xl font-bold lg:text-3xl md:text-xl sm:text-lg">
+              <p className="lg:mb-4 text-2xl font-bold lg:text-3xl md:text-xl sm:text-lg mb-2 mt-2">
                 <Link href={'https://app.eden.art/'}>
-                Full suite of creative AI tools
+                Full suite of creative AI tools.
                 </Link>
               </p>
               <p
@@ -317,7 +306,7 @@ export default function EdenArtFrontPage() {
             <div className="px-3 sm:px-4 md:pl-10 py-3 flex-grow">
               <p className="lg:mb-4 text-2xl font-semibold lg:text-3xl md:text-xl sm:text-lg">
                 <Link href={'https://docs.eden.art/docs/guides/characters/'}>
-                Bring your models to life with bots
+                Bring your models to life with bots.
                 </Link>
               </p>
               <p
@@ -340,7 +329,7 @@ export default function EdenArtFrontPage() {
             <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right">
               <p className="lg:mb-4 text-2xl font-semibold lg:text-3xl md:text-xl sm:text-lg">
                 <Link href={'https://docs.eden.art/docs/guides/sdk'}>
-                Build custom apps
+                Build custom AI apps.
                 </Link>
               </p>
               <p
@@ -354,7 +343,7 @@ export default function EdenArtFrontPage() {
                 </button>
               </Link>
             </div>
-            <div className="lg:w-8/12 md:w-1/2 sm:w-10/12 pt-3 pb-3">
+            <div className="lg:w-1/2 md:w-1/2 sm:w-10/12 pt-3 pb-3">
               <Link href={'https://docs.eden.art/docs/guides/sdk'}>
               <img
                 alt="SDK"
