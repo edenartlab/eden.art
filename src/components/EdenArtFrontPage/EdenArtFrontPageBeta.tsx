@@ -222,7 +222,7 @@ export default function EdenArtFrontPage() {
           <div className="max-w-7xl lg:pt-16">
             <h1 className="pt-20 text-4xl font-bold tracking-tight text-white lg:text-6xl 3xl:text-6xl">
               <Link href={'https://app.eden.art/'}>
-                Amplify your creativity with thousands of artist-crafted AI models.
+                Amplify your creativity with thousands of artist-crafted AI models or craft your own.
               </Link>
             </h1>
             <p className="mt-3 font-extralight text-md lg:text-2xl text-gray-300">
@@ -256,7 +256,7 @@ export default function EdenArtFrontPage() {
             <div className="px-3 sm:px-4 md:pl-10 py-3 flex-grow lg:w-4/12">
               <p className="lg:mb-4 text-2xl font-bold lg:text-3xl md:text-xl sm:text-lg">
                 <Link href={'https://app.eden.art/'}>
-                Creative AI toolkit powered by custom models.
+                Creative AI toolkit powered by custom models
                 </Link>
               </p>
               <p
@@ -272,7 +272,7 @@ export default function EdenArtFrontPage() {
             <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right lg:w-4/12">
               <p className="lg:mb-4 text-2xl font-bold lg:text-3xl md:text-xl sm:text-lg mb-2 mt-2">
                 <Link href={'https://app.eden.art/'}>
-                Full suite of creative AI tools.
+                Full suite of creative AI tools
                 </Link>
               </p>
               <p
@@ -294,7 +294,7 @@ export default function EdenArtFrontPage() {
 
           {/* 3rd section */}
           <div className="mt-10 lg:mt-20 flex flex-col sm:flex sm:flex-row">
-            <div className="sm:w-10/12 md:w-1/2 lg:w-1/2 pt-3 pb-3">
+            <div className="sm:w-10/12 pt-3 pb-3">
               <Link href={'https://docs.eden.art/docs/guides/characters/'}>
               <img
                 alt="Characters & Agents"
@@ -306,7 +306,7 @@ export default function EdenArtFrontPage() {
             <div className="px-3 sm:px-4 md:pl-10 py-3 flex-grow">
               <p className="lg:mb-4 text-2xl font-semibold lg:text-3xl md:text-xl sm:text-lg">
                 <Link href={'https://docs.eden.art/docs/guides/characters/'}>
-                Bring your models to life with creative agents for Discord & Twitter
+                Bring your models to life with agents for Discord & Twitter
                 </Link>
               </p>
               <p
@@ -329,7 +329,7 @@ export default function EdenArtFrontPage() {
             <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right">
               <p className="lg:mb-4 text-2xl font-semibold lg:text-3xl md:text-xl sm:text-lg">
                 <Link href={'https://docs.eden.art/docs/guides/sdk'}>
-                Build custom AI apps.
+                Build custom AI apps
                 </Link>
               </p>
               <p
@@ -343,7 +343,7 @@ export default function EdenArtFrontPage() {
                 </button>
               </Link>
             </div>
-            <div className="lg:w-1/2 md:w-1/2 sm:w-10/12 pt-3 pb-3">
+            <div className="sm:w-10/12 pt-3 pb-3">
               <Link href={'https://docs.eden.art/docs/guides/sdk'}>
               <img
                 alt="SDK"
