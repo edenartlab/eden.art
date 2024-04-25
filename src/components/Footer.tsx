@@ -13,7 +13,7 @@ const navigation = {
   developers: [
     {
       name: 'Github',
-      href: 'https://github.com/github.com/edenartlab',
+      href: 'https://github.com/edenartlab',
       target: '_blank',
       rel: 'noopener noref nofollow'
     },
