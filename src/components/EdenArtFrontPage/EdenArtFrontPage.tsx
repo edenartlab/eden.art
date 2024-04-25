@@ -13,7 +13,7 @@ export default function EdenArtFrontPage() {
   return (
     <div className="bg-black">
       <div
-        className={`fixed z-50 w-full bg-black opacity-80 ${
+        className={`fixed z-50 w-full bg-black opacity-75 ${
           isMenuOpen && size.width < 640 ? 'h-72' : 'h-16'
         } mt-8`}
       >
@@ -38,7 +38,7 @@ export default function EdenArtFrontPage() {
                   <div className="border border-l-white h-8 ml-4 opacity-40"></div>
 
                   <p className="text-xl mt-0.5 pl-4 font-sarif font-light text-white sm:text-lg">
-                    App
+                    Explore
                   </p>
                 </div>
               )}
@@ -122,7 +122,7 @@ export default function EdenArtFrontPage() {
                   className="text-white ml-5 mt-1 mb-2"
                 />{' '}
                 <p className="text-white ml-2.5  mt-2 text-sm font-bold">
-                  APP
+                  EXPLORE
                 </p>
               </div>
             </Link>
@@ -153,7 +153,7 @@ export default function EdenArtFrontPage() {
                   src="/github.png"
                   className="h-8 mt-1.5 ml-4 object-contain"
                 />{' '}
-                <p className="text-white ml-2  mt-3 text-sm font-bold">
+                <p className="text-white ml-2 mt-3 text-sm font-bold">
                   GITHUB
                 </p>
               </div>
@@ -205,182 +205,157 @@ export default function EdenArtFrontPage() {
 
       <div className="relative h-screen">
         <div className="opacity-40">
-          <img src={videoPlaceholderDataUrl} alt="hero-real2real" className="absolute top-24 inset-0 w-full h-full"/>
+          <img src={videoPlaceholderDataUrl} alt="hero-real2real" className="absolute inset-0 w-full h-full" />
           <video
             autoPlay
             loop
             muted
-            className="absolute top-24 inset-0 w-full h-full object-cover z-0"
+            className="absolute inset-0 w-full h-full object-cover z-0"
           >
             <source src="/video.mp4" type="video/mp4" />
             {/* Add more <source> elements for other video formats if needed */}
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="flex h-full items-center max-w-7xl px-4 sm:px-16 pb-24 pt-24 sm:pt-32 sm:pb-32 md:flex md:px-24 md:py-32 lg:flex lg:px-24 lg:py-32 justify-start -mt-8 relative z-10">
-          <div className="max-w-7xl">
-            <h1 className="text-4xl font-bold tracking-tight text-white lg:text-6xl 3xl:text-6xl">
-              Train generative AI models that serve your art
+        <div
+          className="max-w-7xl px-14 pb-24 pt-32 sm:pb-32 md:flex md:px-24 md:py-32 lg:flex lg:px-24 lg:py-32 justify-start -mt-8 relative z-10">
+          <div className="max-w-7xl lg:pt-16">
+            <h1 className="pt-20 text-4xl font-bold tracking-tight text-white lg:text-6xl 3xl:text-6xl">
+              <Link href={'https://app.eden.art/'}>
+                Amplify your creativity with thousands of artist-crafted AI models or create your own.
+              </Link>
             </h1>
             <p className="mt-3 font-extralight text-md lg:text-2xl text-gray-300">
-              Eden makes it easy to amplify your artistic style with AI. Upload your own work, train custom models, and serve them to your fans.
+              Create and remix videos, photos, illustrations, artwork, and more with our collection of custom AI
+              models. Train your own model to produce your style & aesthetic.
             </p>
-            <Link href={'https://app.eden.art/create/concepts'}>
+            <Link href={'https://app.eden.art/'}>
               <div className="mt-6">
-                <button className="text-white text-2xl md:text-sm lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
-                  Train a model in 5 minutes
-                </button>
-              </div>
-            </Link>
-            <Link href={'https://app.eden.art/concepts'}>
-              <div className="mt-6">
-                <button className="text-white text-2xl md:text-sm lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
-                  Explore community models
+                <button
+                  className="text-white text-2xl lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
+                  Explore Eden
                 </button>
               </div>
             </Link>
           </div>
         </div>
-        {/* <div className="flex justify-center items-center ">
-          <img className="h-8 sm:h-16 animate-bounce" src="downarrow.png" />
-        </div> */}
       </div>
       <section className="flex flex-col">
-        <div className="text-white flex px-4 xl:px-24 mt-10 flex-col z-10">
+        <div className="text-white flex px-4 xl:px-24 flex-col z-10 m-10 mt-10">
           {/* 1st section */}
-          <div className="flex flex-col sm:flex sm:flex-row sm:mt-6">
-            <div className="lg:w-1/2 pt-3 pb-3 sm:w-10/12">
+          <div className="flex flex-col sm:flex sm:flex-row sm:mt-8">
+            <div className="lg:w-8/12 md:w-1/2 sm:w-10/12 pt-3 pb-3">
+              <Link href={'https://app.eden.art/'}>
               <img
                 alt="By artists, for artists"
-                src="/img1.jpg"
+                src="/custom-models.jpg"
                 className="rounded-2xl w-full h-auto object-cover"
               />
-            </div>
-            <div className="px-3 sm:px-4 md:pl-10 py-3 flex-grow">
-              <p className="lg:mb-4 text-2xl font-semibold lg:text-4xl md:text-xl sm:text-lg">
-                By artists, for artists
-              </p>
-              <p className="mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
-                Eden is built by OG AI artists with the express purpose of
-                armoring digital artists with this technology.
-              </p>
-              <Link href={'https://docs.eden.art/docs/overview/intro/'}>
-                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#F15EBF]/60">
-                  Our Values
-                </button>
               </Link>
+            </div>
+            <div className="px-3 sm:px-4 md:pl-10 py-3 flex-grow lg:w-4/12">
+              <p className="lg:mb-4 text-2xl font-bold lg:text-3xl md:text-xl sm:text-lg">
+                <Link href={'https://app.eden.art/'}>
+                Creative AI toolkit powered by custom models
+                </Link>
+              </p>
+              <p
+                className="mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-xl md:text-lg sm:text-xs font-extralight">
+                Create with consistent results using custom models for styles, faces, and objects. Train your own models
+                in minutes or use artist-crafted models from our collection.
+              </p>
             </div>
           </div>
+
           {/* 2nd section */}
-          <div className="mt-4 flex flex-col-reverse sm:flex sm:flex-row lg:mt-4">
-            <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right">
-              <p className="lg:mb-4 text-2xl font-semibold lg:text-4xl md:text-xl sm:text-lg">
-                Open source, open access
+          <div className="mt-10 lg:mt-20 lg:mb-2 flex flex-col-reverse sm:flex sm:flex-row">
+            <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right lg:w-4/12">
+              <p className="lg:mb-4 text-2xl font-bold lg:text-3xl md:text-xl sm:text-lg mb-2 mt-2">
+                <Link href={'https://app.eden.art/'}>
+                Full suite of creative AI tools
+                </Link>
               </p>
-              <p className="mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
-                Eden pipelines are built on top of and contribute to the
-                open-source Al revolution, and encourages free modification and
-                experimentation on our tools. There are no walls around our
-                garden.
+              <p
+                className="sm:mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-xl md:text-lg sm:text-xs font-extralight">
+                Generate video and images from text, animate images, make looped animations, create audio-reactive
+                video, video reels, stories, and more all using custom models. Get started in minutes for free.
               </p>
-              <Link href={'https://docs.eden.art/docs/guides/sdk/'}>
-                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#5E64F1]/60">
-                  SDK Quickstart
-                </button>
-              </Link>
             </div>
-            <div className=" lg:w-1/2 pt-3 pb-3 sm:w-10/12">
+            <div className="lg:w-8/12 md:w-1/2 sm:w-10/12 pt-3 pb-3">
+              <Link href={'https://app.eden.art/'}>
               <img
-                alt="SDK"
-                src="/img2.jpg"
+                alt="Creative AI Tools"
+                src="/ai-tools.jpg"
                 className="rounded-2xl w-full h-auto object-cover"
               />
+              </Link>
             </div>
           </div>
 
           {/* 3rd section */}
-          <div className="mt-10 lg:mt-24 flex flex-col-reverse sm:flex-col">
-            <div className="px-3 sm:pl-10  w-full flex justify-center sm:text-center flex-col sm:items-center">
-              <p className="mb-4 md:mb-2 lg:mb-4 text-2xl font-semibold lg:text-4xl md:text-2xl sm:text-lg ">
-                Create, remix, and share
-              </p>
-              <p className="text-2xl text-white lg:text-2xl md:text-lg  sm:text-xs font-extralight">
-                Generate sublime images and videos that use your model in seconds. Share it with your fans and let them remix it and collaborate with you.
-              </p>
-              <Link href={'https://app.eden.art/create/creations'}>
-                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#34e0a1]/60">
-                  Create Art in 1 Minute
-                </button>
-              </Link>
-            </div>
-            <div className="w-full md:pt-3 pb-3 xl:mt-6">
+          <div className="mt-10 lg:mt-20 flex flex-col sm:flex sm:flex-row">
+            <div className="sm:w-10/12 pt-3 pb-3">
+              <Link href={'https://docs.eden.art/docs/guides/characters/'}>
               <img
-                alt="Art in 1 minute"
-                src="/img3.png"
+                alt="Characters & Agents"
+                src="/bot.jpg"
                 className="rounded-2xl w-full h-auto object-cover"
               />
+              </Link>
+            </div>
+            <div className="px-3 sm:px-4 md:pl-10 py-3 flex-grow">
+              <p className="lg:mb-4 text-2xl font-semibold lg:text-3xl md:text-xl sm:text-lg">
+                <Link href={'https://docs.eden.art/docs/guides/characters/'}>
+                Bring your models to life with agents for Discord & Twitter
+                </Link>
+              </p>
+              <p
+                className="mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-xl md:text-lg sm:text-xs font-extralight">
+                Create characters who represents you or your brand and create new
+                works in your style.
+              </p>
+              <Link href={'https://docs.eden.art/docs/guides/characters/'}>
+                <button
+                  className="mt-8 border border-xl rounded-2xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 md:px-3 md:py-2 lg:text-xl lg:px-6 lg:py-3 md:text-md hover:scale-105">
+                  Get started with characters
+                </button>
+              </Link>
+              <br></br>
             </div>
           </div>
 
           {/* 4th section */}
-          <div className="flex mt-6 sm:mt-10 md:mt-24 flex-col sm:flex sm:flex-row">
-            <div className=" md:w-1/2 pt-3 pb-3 sm:w-10/12">
-              <img
-                alt="Deploy art bots online"
-                src="/img5.jpg"
-                className="rounded-2xl w-full h-auto object-cover"
-              />
-            </div>
-            <div className="px-3 sm:px-4 md:pl-10 sm:py-3 md:py-6 flex-grow">
-              <p className="md:mb-4 text-2xl font-semibold lg:text-4xl md:text-2xl sm:text-lg">
-                Deploy art bots online
+          <div className="mt-10 lg:mt-20 flex flex-col-reverse sm:flex sm:flex-row">
+            <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right">
+              <p className="lg:mb-4 text-2xl font-semibold lg:text-3xl md:text-xl sm:text-lg">
+                <Link href={'https://docs.eden.art/docs/guides/sdk'}>
+                Build custom AI apps
+                </Link>
               </p>
-              <p className="mt-4 max-w-xl text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
-                Make a personalized chatbot who represents you or your brand, talks to your fans, and creates new works in your style.
-              </p>
-              <Link href={'https://docs.eden.art/docs/guides/characters/'}>
-                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#F15EBF]/60">
-                  Deploy a bot on Discord or Twitter
-                </button>
-              </Link>
-              {/* <Link
-                href={
-                  'https://app.eden.art/creators/syntonikka?conceptId=657334e4377857179ca52d93'
-                }
-              >
-                <p className="mt-4 sm:mt-20 md:text-2xl underline">
-                  3D Art by Nico
-                </p>
-              </Link> */}
-            </div>
-          </div>
-
-          {/* 5th section */}
-          <div className="flex mt-6 sm:mt-10 md:mt-24 flex-col-reverse sm:flex sm:flex-row">
-            <div className="px-3 sm:w-2/3 md:pr-10 sm:py-3 md:py-6 flex-grow sm:text-right">
-              <p className="md:mb-4 text-2xl font-semibold lg:text-4xl md:text-2xl sm:text-lg">
-                Build custom applications{' '}
-              </p>
-              <p className="mt-4  text-2xl text-white lg:text-2xl md:text-lg sm:text-xs font-extralight">
-                Develop custom frontends or interactive applications that plug into the generative AI ecosystem.
+              <p
+                className="mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-xl md:text-lg sm:text-xs font-extralight">
+                Develop custom frontends or interactive applications that plug into our ecosystem using our open source SDK. Deploy custom models to be used in any context.
               </p>
               <Link href={'https://docs.eden.art/docs/guides/sdk'}>
-                <button className="mt-4 border border-xl rounded-3xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 sm:mt-3 md:mt-3 md:px-3 md:py-2 lg:text-2xl lg:px-6 lg:mt-3 lg:py-3 md:text-md hover:scale-105 hover:bg-[#5EF1E8]/60">
+                <button
+                  className="mt-8 border border-xl rounded-2xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 md:px-3 md:py-2 lg:text-xl lg:px-6 lg:py-3 md:text-md hover:scale-105">
                   Get started with our SDK
                 </button>
               </Link>
             </div>
-            <div className=" md:w-1/2 pt-3 pb-3 sm:w-6/12">
+            <div className="sm:w-10/12 pt-3 pb-3">
+              <Link href={'https://docs.eden.art/docs/guides/sdk'}>
               <img
-                alt="Beta program"
-                src="/img4.png"
+                alt="SDK"
+                src="/custom-apps.jpg"
                 className="rounded-2xl w-full h-auto object-cover"
               />
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      <div className="mt-10">
+      <div className="mt-2">
         <Footer />
       </div>
     </div>

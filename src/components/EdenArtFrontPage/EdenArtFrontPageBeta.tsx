@@ -222,7 +222,7 @@ export default function EdenArtFrontPage() {
           <div className="max-w-7xl lg:pt-16">
             <h1 className="pt-20 text-4xl font-bold tracking-tight text-white lg:text-6xl 3xl:text-6xl">
               <Link href={'https://app.eden.art/'}>
-                Amplify your creativity with thousands of artist-crafted AI models or craft your own.
+                Amplify your creativity with thousands of artist-crafted AI models or create your own.
               </Link>
             </h1>
             <p className="mt-3 font-extralight text-md lg:text-2xl text-gray-300">
