@@ -222,7 +222,7 @@ export default function EdenArtFrontPage() {
           <div className="max-w-7xl lg:pt-16">
             <h1 className="pt-20 text-4xl font-bold tracking-tight text-white lg:text-6xl 3xl:text-6xl">
               <Link href={'https://app.eden.art/'}>
-                Create with hundreds of artist-crafted AI models or train your own.
+                Amplify your creativity with thousands of artist-crafted AI models.
               </Link>
             </h1>
             <p className="mt-3 font-extralight text-md lg:text-2xl text-gray-300">
@@ -233,7 +233,7 @@ export default function EdenArtFrontPage() {
               <div className="mt-6">
                 <button
                   className="text-white text-2xl lg:text-2xl pl-4 pr-4 pt-3 pb-3 border-2 rounded-2xl font-bold tracking-wide transition-transform hover:scale-105 hover:bg-black/40">
-                  Get Started
+                  Explore Eden
                 </button>
               </div>
             </Link>
@@ -266,8 +266,8 @@ export default function EdenArtFrontPage() {
               </p>
             </div>
           </div>
-          {/* 2nd section */}
 
+          {/* 2nd section */}
           <div className="mt-10 lg:mt-20 lg:mb-2 flex flex-col-reverse sm:flex sm:flex-row">
             <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right lg:w-4/12">
               <p className="lg:mb-4 text-2xl font-bold lg:text-3xl md:text-xl sm:text-lg mb-2 mt-2">
@@ -294,10 +294,10 @@ export default function EdenArtFrontPage() {
 
           {/* 3rd section */}
           <div className="mt-10 lg:mt-20 flex flex-col sm:flex sm:flex-row">
-            <div className="lg:w-1/2 md:w-1/2 sm:w-10/12 pt-3 pb-3">
+            <div className="sm:w-10/12 md:w-1/2 lg:w-1/2 pt-3 pb-3">
               <Link href={'https://docs.eden.art/docs/guides/characters/'}>
               <img
-                alt="Bots"
+                alt="Characters & Agents"
                 src="/bot.jpg"
                 className="rounded-2xl w-full h-auto object-cover"
               />
@@ -306,25 +306,25 @@ export default function EdenArtFrontPage() {
             <div className="px-3 sm:px-4 md:pl-10 py-3 flex-grow">
               <p className="lg:mb-4 text-2xl font-semibold lg:text-3xl md:text-xl sm:text-lg">
                 <Link href={'https://docs.eden.art/docs/guides/characters/'}>
-                Bring your models to life with bots.
+                Bring your models to life with creative agents for Discord & Twitter
                 </Link>
               </p>
               <p
                 className="mt-2 md:mt-1 lg:mt-4 max-w-xl text-2xl text-white lg:text-xl md:text-lg sm:text-xs font-extralight">
-                Make a personalized chatbot who represents you or your brand, talks to your fans, and creates new
+                Create characters who represents you or your brand and create new
                 works in your style.
               </p>
               <Link href={'https://docs.eden.art/docs/guides/characters/'}>
                 <button
                   className="mt-8 border border-xl rounded-2xl px-6 py-3 sm:text-sm sm:px-4 sm:py-2 md:px-3 md:py-2 lg:text-xl lg:px-6 lg:py-3 md:text-md hover:scale-105">
-                  Deploy a bot on Discord or Twitter
+                  Get started with characters
                 </button>
               </Link>
               <br></br>
             </div>
           </div>
-          {/* 4th section */}
 
+          {/* 4th section */}
           <div className="mt-10 lg:mt-20 flex flex-col-reverse sm:flex sm:flex-row">
             <div className="px-3 sm:px-4 md:pr-10 sm:py-3 md:py-3 flex-grow sm:text-right">
               <p className="lg:mb-4 text-2xl font-semibold lg:text-3xl md:text-xl sm:text-lg">
