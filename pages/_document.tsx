@@ -57,10 +57,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400&display=swap"
           />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
           {process.env.NODE_ENV === 'production' ? (
             <GoogleTagManager gtmId="G-W4718WCZQK" />
           ) : null}
@@ -71,6 +67,10 @@ export default class MyDocument extends Document {
               console.log(`script loaded: https://rum-static.pingdom.net/pa-662f1da168cac40012000a8e.js`)
             }
           />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
         </body>
       </Html>
     )
