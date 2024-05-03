@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import type { ReactElement, ReactNode } from 'react'
+import  { ReactElement, ReactNode } from 'react'
 import type { AppProps } from 'next/app'
 
 import Head from 'next/head'
@@ -8,6 +8,9 @@ import nProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import 'src/theme/base.css'
 import 'src/theme/global.css'
+import { GoogleTagManager } from '@next/third-parties/google';
+import Script from 'next/script';
+import * as React from 'react';
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode
 }
@@ -37,6 +40,16 @@ function EdenApp(props: EdenAppProps) {
       <main>
         {getLayout(<Component {...pageProps} />)}
       </main>
+      {process.env.NODE_ENV === 'production' ? (
+        <GoogleTagManager gtmId="G-W4718WCZQK" />
+      ) : null}
+      <Script
+        src="https://rum-static.pingdom.net/pa-662f1da168cac40012000a8e.js"
+        strategy="lazyOnload"
+        onLoad={() =>
+          console.log(`script loaded: https://rum-static.pingdom.net/pa-662f1da168cac40012000a8e.js`)
+        }
+      />
     </>
   )
 }

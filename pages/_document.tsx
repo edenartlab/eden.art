@@ -2,8 +2,6 @@ import * as React from 'react'
 
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { GoogleTagManager } from '@next/third-parties/google';
-import Script from 'next/script';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -56,16 +54,6 @@ export default class MyDocument extends Document {
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400&display=swap"
-          />
-          {process.env.NODE_ENV === 'production' ? (
-            <GoogleTagManager gtmId="G-W4718WCZQK" />
-          ) : null}
-          <Script
-            src="https://rum-static.pingdom.net/pa-662f1da168cac40012000a8e.js"
-            strategy="lazyOnload"
-            onLoad={() =>
-              console.log(`script loaded: https://rum-static.pingdom.net/pa-662f1da168cac40012000a8e.js`)
-            }
           />
         </Head>
         <body>
