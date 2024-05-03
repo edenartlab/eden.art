@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import type { ReactElement, ReactNode } from 'react'
 import type { AppProps } from 'next/app'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import Head from 'next/head'
 import Router from 'next/router'
@@ -44,6 +45,9 @@ function EdenApp(props: EdenAppProps) {
             console.log(`script loaded: https://rum-static.pingdom.net/pa-662f1da168cac40012000a8e.js`)
           }
         />
+        {process.env.NODE_ENV === 'production' ? (
+          <GoogleTagManager gtmId="G-W4718WCZQK" />
+        ) : null}
       </main>
     </>
   )
