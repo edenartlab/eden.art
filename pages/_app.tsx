@@ -41,7 +41,7 @@ function EdenApp(props: EdenAppProps) {
         {getLayout(<Component {...pageProps} />)}
       </main>
       {process.env.NODE_ENV === 'production' ? (
-        <GoogleTagManager gtmId="G-W4718WCZQK" />
+        <GoogleTagManager gtmId="GTM-MR2LV55Z" />
       ) : null}
       <Script
         src="https://rum-static.pingdom.net/pa-662f1da168cac40012000a8e.js"
