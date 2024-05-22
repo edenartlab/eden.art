@@ -1,4 +1,4 @@
-import LayoutBlog from '@/components/layouts/layout-blog';
+import LayoutBlog from '@/components/layouts/LayoutBlog';
 import Link from 'next/link';
 
 const BlogPostPage = ({post}) => {

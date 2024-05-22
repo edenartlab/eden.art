@@ -11,7 +11,7 @@ const NavHeader = () => {
     <div
       className={`fixed z-50 w-full bg-black opacity-75 ${
         isMenuOpen && size.width < 640 ? 'h-72' : 'h-16'
-      } mt-8`}
+      }`}
     >
       {' '}
       <div className="flex justify-between">

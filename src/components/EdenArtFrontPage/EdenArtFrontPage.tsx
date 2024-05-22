@@ -6,7 +6,9 @@ import VideoHeroSection from '@/components/VideoHeroSection';
 export default function EdenArtFrontPage() {
   return (
     <div className="bg-black">
-      <NavHeader />
+      <div className="mt-8">
+        <NavHeader />
+      </div>
       <VideoHeroSection />
       <section className="flex flex-col">
         <div className="text-white flex px-4 xl:px-24 flex-col z-10 m-10 mt-10">

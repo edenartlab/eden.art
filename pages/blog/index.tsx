@@ -1,4 +1,4 @@
-import LayoutBlog from '@/components/layouts/layout-blog';
+import LayoutBlog from '@/components/layouts/LayoutBlog';
 import BlogPostPreview from '@/components/BlogPostPreview';
 
 export async function getStaticProps() {
@@ -37,7 +37,7 @@ const BlogIndexPage = ({posts}) => {
         <div>
           <h4>Posts</h4>
           <div className="flex flex-col gap-16">
-            {posts.map(post => (<BlogPostPreview post={post}/>))}
+            {posts.map(post => (<BlogPostPreview key={post.id} post={post}/>))}
           </div>
       </div>
     </div>
