@@ -29,7 +29,7 @@ export async function getStaticProps() {
   }
 }
 
-const BlogIndexPage = ({posts}) => {
+const BlogIndexPage = ({ posts }) => {
   return (
     <LayoutBlog>
       <div>
@@ -39,10 +39,10 @@ const BlogIndexPage = ({posts}) => {
           <div className="flex flex-col gap-16">
             {posts.map(post => (<BlogPostPreview key={post.id} post={post}/>))}
           </div>
+        </div>
       </div>
-    </div>
-</LayoutBlog>
-)
+    </LayoutBlog>
+  )
 }
 
 export default BlogIndexPage
